@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery-mobile-lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>jQ mail</title>
+</head>
+
+<body>
+
+
+    <!-- homePage -->
+    <!-- ------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------- -->
+    <div data-role="page" id="homePage" data-theme="a">
+        <div data-role="header" data-theme="b" class="custom-manu-bar">
+            <div>
+                <h2 onclick="window.history.back()">jQ Mail <a href="#" data-role="button" data-mini="true">45</a></h2>
+            </div>
+            <div>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-refresh ui-btn-icon-notext">refresh</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">search</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">gear</a>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-ajax="false" data-inset="true" data-theme="a">
+                <li>
+                    <a href="#page1">
+                        <img src="img/list-icon.png" class="ui-li-icon ui-corner-none">
+                        <span>Home e-mail</span>
+                        <span class="ui-li-count">7</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#page1">
+                        <img src="img/list-icon.png" class="ui-li-icon ui-corner-none">
+                        <span>Family Gmail</span>
+                        <span class="ui-li-count">12</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#page1">
+                        <img src="img/list-icon.png" class="ui-li-icon ui-corner-none">
+                        <span>Bob's work account</span>
+                        <span class="ui-li-count">23</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <a href="#" class="circle_button ui-btn ui-btn-icon-left ui-icon-account-icon-with-plus">
+                Account
+            </a>
+            <a href="#" class="circle_button ui-btn ui-btn-right">
+                <span>Edit</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- page1 -->
+    <!-- ------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------- -->
+    <div data-role="page" id="page1">
+
+        <div data-role="header" data-theme="b" class="custom-manu-bar">
+            <div>
+                <h2 onclick="window.history.back()">jQ Mail <a href="#" data-role="button" data-mini="true">45</a></h2>
+            </div>
+            <div>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-refresh ui-btn-icon-notext">refresh</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">search</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">gear</a>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-shadow="false">
+                <li data-role="collapsible" data-iconpos="right" data-inset="true" data-collapsed-icon="carat-r"
+                    data-expanded-icon="carat-d" data-collapsed="false">
+
+                    <h2>Home e-mail</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="#page2">
+                                <img src="img/inbox.png" class="ui-li-icon ui-corner-none">
+                                <span>Inbox</span>
+                                <span class="ui-li-count">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/drafts.png" class="ui-li-icon ui-corner-none">
+                                <span>Drafts</span>
+                                <span class="ui-li-count">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/send.png" class="ui-li-icon ui-corner-none">
+                                <span>Sent</span>
+                                <span class="ui-li-count">45</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/trash.png" class="ui-li-icon ui-corner-none">
+                                <span>Trash</span>
+                                <span class="ui-li-count">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/junk.png" class="ui-li-icon ui-corner-none">
+                                <span>Junk</span>
+                                <span class="ui-li-count">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/folder.png" class="ui-li-icon ui-corner-none">
+                                <span>My Folder</span>
+                                <span class="ui-li-count">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2">
+                                <img src="img/folder.png" class="ui-li-icon ui-corner-none">
+                                <span>Personal Folder</span>
+                                <span class="ui-li-count">23</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <a href="#" class="circle_button ui-btn ui-btn-icon-left ui-icon-folder-icon-with-plus">
+                <span>Folder</span>
+            </a>
+            <!-- <a href="page1.html"></a> -->
+            <a href="#" class="circle_button ui-btn ui-btn-right">
+                <span>Edit</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- page2 -->
+    <!-- ------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------- -->
+    <div data-role="page" id="page2">
+
+        <div data-role="header" data-theme="b" class="custom-manu-bar">
+            <div>
+                <h2 onclick="window.history.back()">jQ Mail <a href="#" data-role="button" data-mini="true">45</a></h2>
+            </div>
+            <div>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-refresh ui-btn-icon-notext">refresh</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">search</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">gear</a>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-shadow="false">
+                <li data-role="collapsible" data-iconpos="right" data-inset="true" data-collapsed-icon="carat-r"
+                    data-expanded-icon="carat-d" data-collapsed="false">
+
+                    <h2>Home e-mail</h2>
+                    <ul data-role="listview" data-inset="true">
+                        <li data-icon="false">
+                            <a href="#page3">
+                                <h1>Message title</h1>
+                                <p>This cecondary line runs full width Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic vitae labore ea debitis laborum reprehenderit error, facere
+                                    blanditiis eos dolorum consectetur quo saepe corrupti esse cumque veniam omnis
+                                    magnam quasi.</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li data-icon="false">
+                            <a href="#page3">
+                                <h1>Message title</h1>
+                                <p>This cecondary line runs full width Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic vitae labore ea debitis laborum reprehenderit error, facere
+                                    blanditiis eos dolorum consectetur quo saepe corrupti esse cumque veniam omnis
+                                    magnam quasi.</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li data-icon="false">
+                            <a href="#page3">
+                                <h1>Message title</h1>
+                                <p>This cecondary line runs full width Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic vitae labore ea debitis laborum reprehenderit error, facere
+                                    blanditiis eos dolorum consectetur quo saepe corrupti esse cumque veniam omnis
+                                    magnam quasi.</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li data-icon="false">
+                            <a href="#page3">
+                                <h1>Message title</h1>
+                                <p>This cecondary line runs full width Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic vitae labore ea debitis laborum reprehenderit error, facere
+                                    blanditiis eos dolorum consectetur quo saepe corrupti esse cumque veniam omnis
+                                    magnam quasi.</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                        <li data-icon="false">
+                            <a href="#page3">
+                                <h1>Message title</h1>
+                                <p>This cecondary line runs full width Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic vitae labore ea debitis laborum reprehenderit error, facere
+                                    blanditiis eos dolorum consectetur quo saepe corrupti esse cumque veniam omnis
+                                    magnam quasi.</p>
+                                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <a href="#" class="circle_button ui-btn ui-btn-icon-left ui-icon-compose-icon-with-plus">
+                <span>Compose</span>
+            </a>
+            <!-- <a href="page1.html"></a> -->
+            <a href="#" class="circle_button ui-btn ui-btn-right">
+                <span>Sort: Date</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- page3 -->
+    <!-- ------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------- -->
+    <div data-role="page" id="page3">
+
+        <div data-role="header" data-theme="b" class="custom-manu-bar">
+            <div>
+                <button onclick="window.history.back()"
+                    class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-left ui-btn-inline detaisMunuButton">inbox(12)</button>
+            </div>
+            <div>
+                <div data-role="controlgroup" data-type="horizontal" class="controllerBtn">
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext">Icon only</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-icon-carat-r ui-btn-icon-notext">Icon only</a>
+                </div>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-shadow="false">
+                <li data-icon="false">
+                    <a href="#page3">
+                        <h1>Message title</h1>
+                        <p><strong>July 16, 2010</strong> 6:24 PM</p>
+                        <p class="ui-li-aside"><span><img src="img/attach.png" class="ui-li-icon ui-corner-none"></span>
+                            &nbsp;&nbsp; <span class="detailsPageBadge">12</span></p>
+                    </a>
+                </li>
+                <li class="fromItem">
+                    <div>
+                        <strong>From:</strong>
+                        <a href="#" class="circle_button_for_details_page ui-btn ui-btn-inline">
+                            <span>Nancy Walsh</span>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <span>Details</span>
+                        &nbsp;&nbsp;
+                        <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext">Delete</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="Details">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum praesentium doloribus quibusdam non
+                    nisi. Dolores quae quam necessitatibus porro voluptas ut, nulla sapiente asperiores exercitationem
+                    recusandae esse minima suscipit repellat.</p>
+
+                <p>m dolor sit, amet consectetur adipisicing elit. Illum</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <ul class="toolbarList">
+                <li><a href="#"><img src="img/reload.png" class="ui-li-icon ui-corner-none"></a></li>
+                <li><a href="#"><img src="img/folder.png" class="ui-li-icon ui-corner-none"></a></li>
+                <li><a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop"><img
+                            src="img/delete.png" class="ui-li-icon ui-corner-none"></a></li>
+            </ul>
+            <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-dismissible="false"
+                style="max-width:400px;">
+                <div data-role="header" data-theme="b">
+                    <h1>Delete This Message?</h1>
+                </div>
+                <div role="main" class="ui-content">
+                    <div class="alertContaint">
+                        <p>Once deleted, a message can be recoverd from the Trash</p>
+                        <hr>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back" data-transition="flow"
+                            style="background-color: #0091C8; color: #fff;">Delete</a>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------>
+    <!----------------------main scripts-------------------------------->
+    <!------------------------------------------------------------------>
+    <script src="cordova.js"></script>
+    <script src="jquery-mobile-lib/jquery.min.js"></script>
+
+    <!--------allows page sections/divisions to be hidden--------------->
+    <script>
+        $(document).bind("mobileinit", function () {
+            $.extend($.mobile, {
+                autoInitializePage: true,
+                defaultPageTransition: 'slide',
+                pushStateEnabled: true
+            });
+
+            $(document).on("pagebeforecreate", '#indexPage', function () {
+
+            });
+
+            $(document).on('pagecontainershow', function (event, ui) {
+                // ui.prevPage.remove();
+            });
+
+        });
+    </script>
+
+    <script src="jquery-mobile-lib/jquery.mobile-1.4.5.min.js"></script>
+
+</body>
+
+</html>

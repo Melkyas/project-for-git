@@ -1,0 +1,128 @@
+.container {
+    padding: 8px;
+}
+
+.ui-content {
+    padding: 0;
+}
+
+.ui-content .ui-listview-inset {
+    margin: 0 0;
+}
+
+.ui-listview>li h2 {
+    margin: 0;
+}
+
+.ui-listview>.ui-li-static {
+    padding: 0em 0em;
+}
+
+.ui-icon-account-icon-with-plus:after {
+    background-image: url("../img/list-icon-withe-plus.png");
+    background-size: cover;
+    background-size: 75%;
+}
+
+.ui-icon-folder-icon-with-plus:after {
+    background-image: url("../img/folder-with-plus.png");
+    background-size: cover;
+    background-size: 75%;
+}
+
+.ui-icon-compose-icon-with-plus:after {
+    background-image: url("../img/compose.png");
+    background-size: cover;
+    background-size: 75%;
+}
+
+.ui-listview>.ui-li-has-icon>.ui-btn>img:first-child {
+    position: absolute;
+    left: .625em;
+    top: .6em;
+    max-height: 1.5em;
+    max-width: 1.5em;
+}
+
+#page2 .ui-collapsible-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.circle_button {
+    width: 67px;
+    height: 15px;
+    border-radius: 22px;
+}
+
+
+.custom-manu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.custom-manu-bar h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.detailsPageBadge {
+    background: #ccc;
+    padding: 10px;
+    border-radius: 17px;
+    font-size: 18px;
+}
+
+.fromItem {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 0 10px !important;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle_button_for_details_page {
+    width: 65%;
+    height: 18px;
+    border-radius: 22px;
+}
+
+.Details {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.toolbarList {
+    display: flex;
+    padding: 7px 22px;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.toolbarList li {
+    padding: 0 10px;
+}
+
+.alertContaint {
+    padding: 10px;
+}
+
+.detaisMunuButton {
+    border-radius: 21px !important;
+}
+
+.controllerBtn {
+    border-radius: 2em;
+}
+
+.controllerBtn a:after {
+    background-color: #2FB2DB;
+}
